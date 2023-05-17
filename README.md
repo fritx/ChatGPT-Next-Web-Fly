@@ -94,6 +94,18 @@ One-Click to deploy well-designed ChatGPT web UI on Vercel.
    [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FYidadaa%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=chatgpt-next-web&repository-name=ChatGPT-Next-Web), remember that `CODE` is your page password;
 3. Enjoy :)
 
+## 部署到 Fly.io
+
+```shell
+# cli安装见 https://fly.io/docs/hands-on/install-flyctl/
+curl -L https://fly.io/install.sh | sh
+
+cp fly.example.toml fly.toml
+# 修改 fly.toml 中的 app name
+
+fly deploy
+```
+
 ## FAQ
 
 [简体中文 > 常见问题](./docs/faq-cn.md)
